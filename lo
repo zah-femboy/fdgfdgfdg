@@ -406,6 +406,7 @@ function toggle:addKeybind(args)
     updateValue(args.key or Enum.KeyCode.Unknown)
 end
 
+
             library.flags[args.flag] = false
             library.options[args.flag] = {type = "toggle", changeState = toggle, skipflag = args.skipflag, oldargs = args}
             
